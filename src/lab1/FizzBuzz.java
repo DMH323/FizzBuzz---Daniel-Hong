@@ -7,18 +7,18 @@ class FizzBuzz {
 
     public static void main(String[] args) {
 
-        int i = 1;
+        int i = 0;
         while (i < 100) {
 
             i = fizzbuzz(i);
+            i++;
         }
     }
 
-    private static int fizzbuzz(int i) {
+    public static int fizzbuzz(int i) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
-        i++;
         // Print our appropriate result.
         if (divisibleBy3 && divisibleBy5) {
 
@@ -34,7 +34,7 @@ class FizzBuzz {
 
         } else {
 
-            System.out.println(i -1);
+            System.out.println(i);
 
         }
         return i;
